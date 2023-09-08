@@ -1,0 +1,55 @@
+.custom{
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+p {
+  font-family: Lato;
+}
+table {
+  width: 80%;
+margin-left: 20px;
+
+}
+
+td.mat-cell,th.mat-header-cell {
+  text-align: center !important;
+}
+
+th {
+  position: relative;
+  pointer-events: none;
+}
+
+th::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -7px;
+  bottom: 0;
+  width: 6px;
+  cursor: col-resize;
+  background: transparent;
+  z-index: 1;
+  pointer-events: auto;
+  border-left: 1px solid grey;
+}
+
+td:not(:first-child){
+  border-left: 1px solid grey;
+}
+td:last-child{
+  border-right: 1px solid grey;
+}
+
+td:first-child{
+  border-left: 1px solid grey;
+}
